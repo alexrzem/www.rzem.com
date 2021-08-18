@@ -1,6 +1,6 @@
 <template>
-	<div class="page">
-		<h1>Home</h1>
+	<div class="subpage">
+		<h2>Projects</h2>
 	</div>
 </template>
 
