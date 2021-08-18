@@ -5,16 +5,17 @@
 
 body {
 	@apply bg-midnight;
-  }
-  
-  #app {
+	@apply text-gray-300;
+	@apply font-sans font-thin;
+}
+
+#app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@apply text-gray-900;
-  }
+}
 
 h1 {
-	@apply text-3xl;
+	@apply text-4xl font-thin;
 }
 
 h2 {
@@ -27,4 +28,23 @@ h3 {
 
 h4 {
 	@apply text-lg;
+}
+
+.page {
+	@apply container max-w-4xl mx-auto py-6;
+}
+
+.subpage {
+	@apply py-2;
+}
+
+.tablink {
+	@apply border-transparent hover:text-blue-400 hover:border-blue-400 border-b-2;
+	@apply group inline-flex items-center py-2 px-0 text-sm;
+}
+
+.tablink.router-link-active,
+.tablink.router-link-exact-active {
+	@apply border-blue-300 text-grey-100 border-b-2;
+	@apply group inline-flex items-center py-2 px-0 text-sm;
 }
